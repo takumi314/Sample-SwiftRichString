@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let rect = CGRect(x: 0.0, y: 0.0, width: 200.0, height: 50.0)
+        let rect = CGRect(x: 0.0, y: 0.0, width: 250.0, height: 50.0)
         label = ViewController.instatiateLabel(rect: rect)
         label.center = view.center
 
