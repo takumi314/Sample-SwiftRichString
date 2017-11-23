@@ -48,19 +48,19 @@ class ViewController: UIViewController {
 
     func describe() -> NSMutableAttributedString {
         //  To create a set of style
-        let style = Style("super", { (marker) in
+        let style = Style("super", { (maker) in
 
             // フォント指定
-            marker.font = FontAttribute(.TimesNewRomanPS_BoldItalicMT, size: 30)
+            maker.font = FontAttribute(.TimesNewRomanPS_BoldItalicMT, size: 20)
 
             // 下線の指定
-            marker.underline = UnderlineAttribute(color: .red, style: NSUnderlineStyle.styleDouble)
+            maker.underline = UnderlineAttribute(color: .red, style: NSUnderlineStyle.styleDouble)
 
             // 文字色の指定
-            marker.color = .darkText
+            maker.color = .darkText
 
             // テキスト位置の指定
-            marker.align = .center
+            maker.align = .center
         })
 
         // To set the style into String
