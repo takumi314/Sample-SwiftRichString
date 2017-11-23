@@ -18,12 +18,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let rect = CGRect(x: 0.0, y: 0.0, width: 250.0, height: 50.0)
-        label = ViewController.instatiateLabel(rect: rect)
-        label.center = view.center
-
-        // CALayer
-        label.layer(colour: .black, width: 1.0)
+        label = ViewController
+                .instatiateLabel(rect: CGRect(x: 0.0, y: 0.0, width: 250.0, height: 50.0))
+                .center { [unowned self] in
+                    return self.view.center
+                }.border { (layer) in
+                    // CALayer
+                    layer.borderColor = UIColor.black.cgColor
+                    layer.borderWidth = 1.0
+                }
 
         useLabelExteneion()
 
