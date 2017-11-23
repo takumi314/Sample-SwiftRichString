@@ -69,6 +69,17 @@ class ViewController: UIViewController {
         return text
     }
 
+    // MARK: - UILabelExtenions
+
+    func useLabelExteneion() -> Void {
+        label.setText("UILabelを拡張して表示してみたよ✌️") { (maker) in
+            maker.font = FontAttribute(.Optima_BoldItalic, size: 16)
+            maker.underline = UnderlineAttribute(color: .green, style: NSUnderlineStyle.styleSingle)
+            maker.color = .purple
+            maker.align = .center
+        }
+    }
+
     // MARK: - Others
 
     static func instatiateLabel(rect: CGRect) -> UILabel {
