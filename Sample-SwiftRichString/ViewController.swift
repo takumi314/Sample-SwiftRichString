@@ -29,6 +29,10 @@ class ViewController: UIViewController {
         view.addSubview(label)
     }
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+
     // MARK: - UIViewController
 
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -38,10 +42,6 @@ class ViewController: UIViewController {
             //
         }
         super.willTransition(to: newCollection, with: coordinator)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 
     // MARK: - SwiftRichString configurations
