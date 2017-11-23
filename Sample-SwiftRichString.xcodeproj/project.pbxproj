@@ -15,6 +15,7 @@
 		E1A349801FC1932200C6346C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A3497E1FC1932200C6346C /* LaunchScreen.storyboard */; };
 		E1A3498B1FC1932200C6346C /* Sample_SwiftRichStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A3498A1FC1932200C6346C /* Sample_SwiftRichStringTests.swift */; };
 		E1A9422F1FC6BF1E00CF023A /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A9422E1FC6BF1E00CF023A /* UILabelExtension.swift */; };
+		E1A942331FC71E9500CF023A /* RichStringConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A942321FC71E9500CF023A /* RichStringConfig.swift */; };
 		E5C3C4627FEE857DE54DA18A /* Pods_Sample_SwiftRichStringTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDCD69B6FE5DF6F3551F727 /* Pods_Sample_SwiftRichStringTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		E1A3498A1FC1932200C6346C /* Sample_SwiftRichStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_SwiftRichStringTests.swift; sourceTree = "<group>"; };
 		E1A3498C1FC1932200C6346C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1A9422E1FC6BF1E00CF023A /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UILabelExtension.swift; path = Extensions/UILabelExtension.swift; sourceTree = "<group>"; };
+		E1A942321FC71E9500CF023A /* RichStringConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichStringConfig.swift; sourceTree = "<group>"; };
 		E4488521AAF01173BA71D90B /* Pods-Sample-SwiftRichStringTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample-SwiftRichStringTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sample-SwiftRichStringTests/Pods-Sample-SwiftRichStringTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 				E1A3497E1FC1932200C6346C /* LaunchScreen.storyboard */,
 				E1A349811FC1932200C6346C /* Info.plist */,
 				E1A9422E1FC6BF1E00CF023A /* UILabelExtension.swift */,
+				E1A942321FC71E9500CF023A /* RichStringConfig.swift */,
 			);
 			path = "Sample-SwiftRichString";
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1A942331FC71E9500CF023A /* RichStringConfig.swift in Sources */,
 				E1A349781FC1932200C6346C /* ViewController.swift in Sources */,
 				E1A9422F1FC6BF1E00CF023A /* UILabelExtension.swift in Sources */,
 				E1A349761FC1932200C6346C /* AppDelegate.swift in Sources */,

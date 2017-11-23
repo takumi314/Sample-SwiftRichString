@@ -18,12 +18,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let rect = CGRect(x: 0.0, y: 0.0, width: 250.0, height: 50.0)
-        label = ViewController.instatiateLabel(rect: rect)
-        label.center = view.center
-
-        // CALayer
-        label.layer(colour: .black, width: 1.0)
+        label = ViewController
+                .instatiateLabel(rect: CGRect(x: 0.0, y: 0.0, width: 250.0, height: 50.0))
+                .center { [unowned self] in
+                    return self.view.center
+                }.border { (layer) in
+                    // CALayer
+                    layer.borderColor = UIColor.black.cgColor
+                    layer.borderWidth = 1.0
+                }
 
         useLabelExteneion()
 
@@ -49,26 +52,7 @@ class ViewController: UIViewController {
     // MARK: - SwiftRichString configurations
 
     func describe() -> NSMutableAttributedString {
-        //  To create a set of style
-        let style = Style("super", { (maker) in
-
-            // フォント指定
-            maker.font = FontAttribute(.TimesNewRomanPS_BoldItalicMT, size: 20)
-
-            // 下線の指定
-            maker.underline = UnderlineAttribute(color: .red, style: NSUnderlineStyle.styleDouble)
-
-            // 文字色の指定
-            maker.color = .darkText
-
-            // テキスト位置の指定
-            maker.align = .center
-        })
-
-        // To set the style into String
-        let text = "Sameple😎だよーん".set(styles: style)
-
-        return text
+        return "Sameple😎だよーん".set(styles: RichStringConfig.style1)
     }
 
     // MARK: - UILabelExtenions
