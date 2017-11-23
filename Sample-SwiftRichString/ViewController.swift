@@ -29,6 +29,17 @@ class ViewController: UIViewController {
         view.addSubview(label)
     }
 
+    // MARK: - UIViewController
+
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        coordinator.animate(alongsideTransition: { [unowned self] (context) in
+            self.label.center = self.view.center
+        }) { (contect) in
+            //
+        }
+        super.willTransition(to: newCollection, with: coordinator)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
