@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         // CALayer
         label.layer(colour: .black, width: 1.0)
 
+        useLabelExteneion()
+
         // To add the label as view
         view.addSubview(label)
     }
