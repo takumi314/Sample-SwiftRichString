@@ -46,5 +46,11 @@ class ViewController: UIViewController {
         return text
     }
 
+    // MARK: - Others
+
+    static func instatiateLabel(rect: CGRect) -> UILabel {
+        return UILabel(frame: rect)
+    }
+
 }
 
