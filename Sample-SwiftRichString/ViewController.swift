@@ -11,9 +11,16 @@ import SwiftRichString
 
 class ViewController: UIViewController {
 
+    private var label: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let rect = CGRect(x: 0.0, y: 0.0, width: 200.0, height: 50.0)
+        label = ViewController.instatiateLabel(rect: rect)
+        label.center = view.center
+        // To add the label as view
+        view.addSubview(label)
     }
 
     override func didReceiveMemoryWarning() {
