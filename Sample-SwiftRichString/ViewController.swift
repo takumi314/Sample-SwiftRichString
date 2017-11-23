@@ -23,8 +23,8 @@ class ViewController: UIViewController {
         label.center = view.center
 
         // CALayer
-        label.layer.borderColor = UIColor.black.cgColor
-        label.layer.borderWidth = 1.0
+        label.layer(colour: .black, width: 1.0)
+
         // To add the label as view
         view.addSubview(label)
     }
