@@ -21,6 +21,10 @@ class ViewController: UIViewController {
         let rect = CGRect(x: 0.0, y: 0.0, width: 200.0, height: 50.0)
         label = ViewController.instatiateLabel(rect: rect)
         label.center = view.center
+
+        // CALayer
+        label.layer.borderColor = UIColor.black.cgColor
+        label.layer.borderWidth = 1.0
         // To add the label as view
         view.addSubview(label)
     }
