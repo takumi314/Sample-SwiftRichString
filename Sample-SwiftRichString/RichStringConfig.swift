@@ -32,4 +32,11 @@ struct RichStringConfig {
         }
     }
 
+    var style3: Style {
+        return Style("style3") { (maker) in
+            maker.font = FontAttribute(.CourierNewPS_ItalicMT, size: 25)
+            maker.color = .red
+        }
+    }
+
 }
